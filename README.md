@@ -87,19 +87,26 @@ I'm a dedicated developer with a strong foundation across multiple programming p
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=puspendugorai-coder&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&langs_count=6&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=puspendugorai-coder&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github" alt="Puspendu's GitHub Stats" />
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&langs_count=6&theme=tokyonight&hide_border=true" alt="Puspendu's Top Languages" />
 
 </div>
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+<img src="https://streak-stats.demolab.com?user=puspendugorai-coder&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
 </div>
 
----
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=puspendugorai-coder&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Contribution Graph" />
+</div>
 
+### 🤝 Project Contributors
+<a href="https://github.com/puspendugorai-coder/puspendugorai-coder/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=puspendugorai-coder/puspendugorai-coder" />
+</a>
 ## 🌱 Currently Growing In
 
 - 🧠 Strengthening **Data Structures & Algorithms** across C and Python
@@ -113,18 +120,16 @@ I'm a dedicated developer with a strong foundation across multiple programming p
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:puspendugorai74@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/puspendugorai-coder)
+<a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" />
+</a>
 
-</div>
+<a href="mailto:puspendugorai74@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail" />
+</a>
 
----
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
-
-*⭐ Feel free to explore my repositories and drop a star if something interests you!*
+<a href="https://github.com/puspendugorai-coder" target="blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" />
+</a>
 
 </div>
