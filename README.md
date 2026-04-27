@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi!%20I%20am%20Puspendu%20%F0%9F%91%8B&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Python%20%7C%20C%20%7C%20SQL%20%7C%20Java&descAlignY=58&descSize=20"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi!%20I%20am%20Puspendu%20%F0%9F%91%8B&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Python%20%7C%20C%20%7C%20SQL%20%7C%20Java%20%7C%20AIML&descAlignY=58&descSize=20"/>
 
 </div>
 
@@ -10,7 +10,37 @@
 
 > *"The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly."* — Donald Knuth
 
-I'm a dedicated developer with a strong foundation across multiple programming paradigms — from low-level system programming in **C**, to data-driven scripting in **Python**, to enterprise-grade applications in **Java**, and structured data management with **SQL**. I love tackling challenging problems and writing clean, efficient, and meaningful code.
+I'm a dedicated developer with a strong foundation across multiple programming paradigms. I am currently a **2nd-year student at Brainware University**, pursuing my **B.Tech in Computer Science and Engineering (AIML)**. I love tackling challenging problems and writing clean, efficient, and meaningful code.
+
+---
+🚀 **CURRENT FOCUS:** **Web Development & AI/ML Engineering**  
+🎯 **CARRER GOALS:** **Full-Stack Web Developer | ML/AI Engineer**
+
+---
+## 📫 Contact Information
+
+<table width="100%">
+  <tr>
+    <td width="30%"><strong>🎓 Institution</strong></td>
+    <td>Brainware University</td>
+  </tr>
+  <tr>
+    <td><strong>📜 Degree</strong></td>
+    <td>B.Tech in CSE (AI & ML) — 2nd Year</td>
+  </tr>
+  <tr>
+    <td><strong>📧 Email</strong></td>
+    <td><a href="mailto:puspendugorai74@gmail.com">puspendugorai74@gmail.com</a></td>
+  </tr>
+  <tr>
+    <td><strong>📞 Phone</strong></td>
+    <td><a href="tel:+918509151922">+91 8509151922</a></td>
+  </tr>
+  <tr>
+    <td><strong>📍 Location</strong></td>
+    <td>West Bengal, India</td>
+  </tr>
+</table>
 
 ---
 
@@ -21,21 +51,21 @@ I'm a dedicated developer with a strong foundation across multiple programming p
 <td width="50%" valign="top">
 
 ### 🐍 Python
-- Proficient in Python's core libraries for scripting, automation, and data processing
-- Experience with **Pandas & NumPy** for data manipulation and analysis
-- Built automation scripts to streamline file operations and workflows
-- Familiar with **OOP concepts** and functional programming in Python
-- Worked with APIs, JSON parsing, and web-based data tasks
+- Proficient in Python's core libraries for scripting and automation
+- Experience with **Pandas & NumPy** for data analysis
+- Built automation scripts to streamline file operations
+- Strong grasp of **OOP concepts** and functional programming
+- Worked with APIs and JSON parsing
 
 </td>
 <td width="50%" valign="top">
 
 ### ⚙️ C
-- Strong understanding of **pointers, memory management**, and the stack/heap model
-- Implemented classic data structures: **linked lists, stacks, queues, trees**
-- Built programs demonstrating mastery of **file I/O** and dynamic memory allocation
-- Developed algorithmic solutions with focus on **time and space complexity**
-- Solid grasp of the C compilation model and how programs run at the system level
+- Understanding of **pointers, memory management**, and stack/heap
+- Implemented **linked lists, stacks, queues, and trees**
+- Built programs demonstrating **file I/O** and dynamic allocation
+- Developed algorithmic solutions with focus on **complexity**
+- Knowledge of the C compilation model
 
 </td>
 </tr>
@@ -43,21 +73,19 @@ I'm a dedicated developer with a strong foundation across multiple programming p
 <td width="50%" valign="top">
 
 ### 🗄️ SQL
-- Comfortable writing **SELECT, JOIN, GROUP BY, HAVING**, and subqueries
-- Designed normalized relational database schemas from scratch
-- Used **aggregate functions and window functions** for data reporting
-- Experience with **MySQL / PostgreSQL / SQLite** environments
-- Applied SQL for data extraction, transformation, and insight generation
+- Comfortable writing **SELECT, JOIN, GROUP BY**, and subqueries
+- Designed normalized relational database schemas
+- Experience with **MySQL, PostgreSQL, and SQLite**
+- Applied SQL for data extraction and insight generation
 
 </td>
 <td width="50%" valign="top">
 
 ### ☕ Java
-- Solid command of **Object-Oriented Programming**: classes, inheritance, interfaces, and polymorphism
-- Built programs using the **Java Collections Framework** (ArrayList, HashMap, etc.)
-- Hands-on experience with **exception handling** and writing robust, maintainable code
-- Familiar with **multi-threading basics** and Java's standard I/O model
-- Practiced **design principles** (DRY, SOLID) in structured Java projects
+- Command of **OOP**: classes, inheritance, and polymorphism
+- Built programs using the **Java Collections Framework**
+- Hands-on experience with **exception handling** and robust code
+- Practiced **design principles** (DRY, SOLID) in Java projects
 
 </td>
 </tr>
@@ -104,15 +132,20 @@ I'm a dedicated developer with a strong foundation across multiple programming p
 </div>
 
 ### 🤝 Project Contributors
+<div align="left">
 <a href="https://github.com/puspendugorai-coder/puspendugorai-coder/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=puspendugorai-coder/puspendugorai-coder" />
 </a>
+</div>
+
+---
+
 ## 🌱 Currently Growing In
 
-- 🧠 Strengthening **Data Structures & Algorithms** across C and Python
-- 📊 Exploring **advanced SQL** — query optimization and database design patterns
-- 🔧 Building projects that integrate **multiple languages** in real-world scenarios
-- 📚 Deepening software engineering fundamentals
+- 🧠 Strengthening **Data Structures & Algorithms**
+- 📊 Exploring **advanced SQL** and query optimization
+- 🔧 Building projects that integrate **multiple languages**
+- 📚 Deepening software engineering fundamentals in **AIML**
 
 ---
 
