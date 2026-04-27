@@ -9,6 +9,7 @@
 ## 🧑‍💻 About Me
 
 > *"The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly."* — Donald Knuth
+> *"The programmers of tomorrow are the wizards of the future".*
 
 I'm a dedicated developer with a strong foundation across multiple programming paradigms. I am currently a **2nd-year student at Brainware University**, pursuing my **B.Tech in Computer Science and Engineering (AIML)**. I love tackling challenging problems and writing clean, efficient, and meaningful code.
 
