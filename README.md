@@ -51,20 +51,6 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
   </tr>
 </table>
 
-### 🛠️ Languages & Tools
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <br/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Hugging_Face-FFAA21?style=for-the-badge&logo=huggingface&logoColor=white" />
-</p>
-
 ### ⚡ Top Languages
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
