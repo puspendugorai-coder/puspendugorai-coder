@@ -16,16 +16,35 @@
 <table style="border: none; border-collapse: collapse;">
   <tr style="border: none;">
     <!-- Left Column: About Me Text -->
-    <td width="55%" style="border: none; vertical-align: top;">
-      <h3>👨‍💻 About Me</h3>
-      <ul>
-        <li>🎓 I'm currently a 2nd-year <strong>B.Tech CSE (AIML)</strong> student at Brainware University.</li>
-        <li>🐍 <strong>Python Enthusiast</strong> & <strong>Full-Stack Web Developer</strong>.</li>
-        <li>🤖 Passionate about AI Engineering, LLMs, RAG, and building smart web applications.</li>
-        <li>🔭 Currently working with tools like <strong>Flask, Supabase, Streamlit, and Hugging Face</strong>.</li>
-        <li>📫 How to reach me: <a href="mailto:puspendugorai74@gmail.com">Email Me</a></li>
-      </ul>
-    </td>
+   <td width="55%" style="border: none; vertical-align: top; padding-right: 20px;">
+     <h1> 👤 About Me! </h1>
+  <h2>👋 Hello, I'm <strong>Puspendu Gorai</strong></h2>
+  
+  <!-- Stylish Quote Box to add vertical bulk -->
+  <blockquote>
+    <p>💡 <b>"Turning concepts into intelligent web applications."</b></p>
+    <p>I am a passionate developer focusing on the intersection of AI Engineering and modern full-stack web technologies.</p>
+  </blockquote>
+
+  <hr>
+
+  <!-- Spaced out details to match the GIF height -->
+  <p>
+    🎓 <b>Education:</b> B.Tech CSE (AIML) @ Brainware University <br><br>
+    🐍 <b>The Focus:</b> Python Enthusiast & Full-Stack Web Dev <br><br>
+    🧠 <b>Interests:</b> AI Engineering, LLMs, RAG Architecture <br><br>
+    🌱 <b>Currently Learning:</b> Advanced Model Deployment & Scalability <br><br>
+    📫 <b>Let's Connect:</b> <a href="mailto:puspendugorai74@gmail.com">puspendugorai74@gmail.com</a>
+  </p>
+
+  <hr>
+
+  <!-- Mini Tech Stack badges to fill the bottom space -->
+  <p>
+    <b>⚡ Core Stack:</b><br>
+    <code>Python</code> <code>Flask</code> <code>Streamlit</code> <code>Supabase</code> <code>Hugging Face</code>
+  </p>
+</td>
    <!-- Right Column: 3D Animation -->
 <td width="45%" style="border: none; vertical-align: top;" align="center">
   <img src="https://github.com/puspendugorai-coder/puspendugorai-coder/blob/main/NEURO.gif?raw=true" alt="3D Tech Animation" width="400" />
