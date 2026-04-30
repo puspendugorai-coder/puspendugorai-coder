@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puspendu Gorai | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: 'Fira Code', monospace;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .canvas {
+      display: flex;
+      gap: 0;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* ── LEFT PANEL ── */
+    .left {
+      width: 42%;
+      padding: 40px 36px;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      overflow-y: auto;
+    }
+
+    .greeting {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: #58a6ff;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.5s ease 0.2s forwards;
+    }
+
+    .name-block {
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.4s forwards;
+    }
+
+    .name-block h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #fff;
+    }
+
+    .name-block h1 span {
+      background: linear-gradient(135deg, #58a6ff 0%, #bc8cff 50%, #ff7b72 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .role-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.6s forwards;
+    }
+
+    .tag {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      border: 1px solid;
+    }
+
+    .tag-blue   { border-color: #58a6ff; color: #58a6ff; background: rgba(88,166,255,0.08); }
+    .tag-purple { border-color: #bc8cff; color: #bc8cff; background: rgba(188,140,255,0.08); }
+    .tag-red    { border-color: #ff7b72; color: #ff7b72; background: rgba(255,123,114,0.08); }
+    .tag-green  { border-color: #3fb950; color: #3fb950; background: rgba(63,185,80,0.08); }
+
+    /* ── TERMINAL BLOCK ── */
+    .terminal {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 1s forwards;
+    }
+
+    .term-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 14px;
+      background: #0d1117;
+      border-bottom: 1px solid #21262d;
+    }
+
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-r { background: #ff5f57; }
+    .dot-y { background: #ffbd2e; }
+    .dot-g { background: #28c840; }
+    .term-title { font-size: 11px; color: #484f58; margin-left: 4px; }
+
+    .term-body { padding: 14px 18px; font-size: 12px; line-height: 2; }
+
+    .line { display: flex; align-items: flex-start; gap: 6px; }
+    .prompt { color: #3fb950; flex-shrink: 0; }
+    .cmd { color: #c9d1d9; }
+    .output { color: #8b949e; }
+    .val-blue   { color: #58a6ff; }
+    .val-purple { color: #bc8cff; }
+    .val-yellow { color: #e3b341; }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      background: #58a6ff;
+      animation: blink 1s infinite;
+      vertical-align: middle;
+      margin-left: 2px;
+    }
+
+    /* ── STATS ROW ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 1.2s forwards;
+    }
+
+    .stat-box {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+      cursor: default;
+    }
+
+    .stat-box:hover { border-color: #58a6ff; transform: translateY(-2px); }
+    .stat-num { font-size: 20px; font-weight: 700; color: #fff; font-family: 'Space Grotesk', sans-serif; }
+    .stat-lbl { font-size: 10px; color: #484f58; margin-top: 2px; letter-spacing: 0.5px; }
+
+    /* ── SKILLS ── */
+    .skill-section {
+      opacity: 0;
+      animation: fadeUp 0.6s ease 1.4s forwards;
+    }
+
+    .skill-title { font-size: 10px; letter-spacing: 3px; color: #484f58; text-transform: uppercase; margin-bottom: 12px; }
+
+    .skill-bar { margin-bottom: 10px; }
+    .skill-meta { display: flex; justify-content: space-between; font-size: 11px; color: #8b949e; margin-bottom: 4px; }
+    .bar-bg { height: 4px; background: #21262d; border-radius: 2px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 2px; animation: fillBar 1.5s ease forwards; }
+
+    .bar-py   { background: linear-gradient(90deg, #58a6ff, #388bfd); animation-delay: 1.5s; }
+    .bar-web  { background: linear-gradient(90deg, #bc8cff, #8957e5); animation-delay: 1.7s; }
+    .bar-ml   { background: linear-gradient(90deg, #ff7b72, #f85149); animation-delay: 1.9s; }
+    .bar-sql  { background: linear-gradient(90deg, #3fb950, #238636); animation-delay: 2.1s; }
+    .bar-java { background: linear-gradient(90deg, #e3b341, #bb8009); animation-delay: 2.3s; }
+
+    /* ── CONNECT LINKS ── */
+    .connect-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 1.6s forwards;
+    }
+
+    .connect-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      text-decoration: none;
+      border: 1px solid;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .cb-gh { border-color: #30363d; color: #8b949e; background: rgba(48,54,61,0.3); }
+    .cb-gh:hover { border-color: #8b949e; color: #e6edf3; background: rgba(48,54,61,0.7); }
+    .cb-li { border-color: #0a66c2; color: #58a6ff; background: rgba(10,102,194,0.1); }
+    .cb-li:hover { background: rgba(10,102,194,0.2); }
+    .cb-gm { border-color: #d14836; color: #ff7b72; background: rgba(209,72,54,0.1); }
+    .cb-gm:hover { background: rgba(209,72,54,0.2); }
+
+    /* ── RIGHT PANEL ── */
+    .right {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .right::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(88,166,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(88,166,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+    }
+
+    .right::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 50%, rgba(88,166,255,0.06) 0%, transparent 70%);
+      z-index: 0;
+    }
+
+    /* ── ORB ── */
+    .orb-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .orb-wrap {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .orb {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%,
+        rgba(88,166,255,0.25) 0%,
+        rgba(188,140,255,0.15) 40%,
+        rgba(13,17,23,0.9) 70%
+      );
+      border: 1px solid rgba(88,166,255,0.3);
+      box-shadow:
+        0 0 60px rgba(88,166,255,0.15),
+        0 0 120px rgba(188,140,255,0.08),
+        inset 0 0 40px rgba(88,166,255,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(88,166,255,0.2);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ring1 { width: 180px; height: 180px; animation: spinX 8s linear infinite; }
+    .ring2 { width: 140px; height: 140px; animation: spinY 6s linear infinite reverse; border-color: rgba(188,140,255,0.2); }
+    .ring3 { width: 100px; height: 100px; animation: spinZ 4s linear infinite; border-color: rgba(255,123,114,0.2); }
+
+    .core {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(88,166,255,0.8), rgba(188,140,255,0.4));
+      box-shadow: 0 0 20px rgba(88,166,255,0.6), 0 0 40px rgba(188,140,255,0.3);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .orbit-dot {
+      position: absolute;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      top: 50%; left: 50%;
+    }
+
+    .od1 { background: #58a6ff; box-shadow: 0 0 8px #58a6ff; animation: orbit1 3s linear infinite; }
+    .od2 { background: #bc8cff; box-shadow: 0 0 8px #bc8cff; animation: orbit2 5s linear infinite; }
+    .od3 { background: #ff7b72; box-shadow: 0 0 8px #ff7b72; animation: orbit3 4s linear infinite; }
+    .od4 { background: #3fb950; box-shadow: 0 0 8px #3fb950; animation: orbit4 6s linear infinite reverse; }
+
+    .float-chip {
+      position: absolute;
+      font-family: 'Fira Code', monospace;
+      font-size: 10px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      animation: floatChip 3s ease-in-out infinite;
+    }
+
+    .fc1 { top: -10px; left: -60px; background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.3); color: #58a6ff; animation-delay: 0s; }
+    .fc2 { top: 40px; right: -70px; background: rgba(63,185,80,0.1); border: 1px solid rgba(63,185,80,0.3); color: #3fb950; animation-delay: 0.5s; }
+    .fc3 { bottom: 40px; left: -80px; background: rgba(188,140,255,0.1); border: 1px solid rgba(188,140,255,0.3); color: #bc8cff; animation-delay: 1s; }
+    .fc4 { bottom: -10px; right: -60px; background: rgba(255,123,114,0.1); border: 1px solid rgba(255,123,114,0.3); color: #ff7b72; animation-delay: 1.5s; }
+
+    /* ── CURRENTLY BUILDING ── */
+    .building-card {
+      z-index: 1;
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 10px;
+      padding: 14px 18px;
+      width: 260px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .building-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #58a6ff, #bc8cff, #ff7b72);
+    }
+
+    .bc-title { font-size: 9px; letter-spacing: 3px; color: #484f58; text-transform: uppercase; margin-bottom: 10px; }
+
+    .bc-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: #8b949e;
+      padding: 4px 0;
+    }
+
+    .bc-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .bd-blue   { background: #58a6ff; box-shadow: 0 0 6px #58a6ff; }
+    .bd-purple { background: #bc8cff; box-shadow: 0 0 6px #bc8cff; }
+    .bd-green  { background: #3fb950; box-shadow: 0 0 6px #3fb950; }
+
+    .location-label {
+      font-size: 10px;
+      color: #484f58;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    /* ── KEYFRAMES ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-16px); }
+    }
+    @keyframes floatChip {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-6px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+    @keyframes fillBar {
+      from { width: 0%; }
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(88,166,255,0.6), 0 0 40px rgba(188,140,255,0.3); transform: translate(-50%,-50%) scale(1); }
+      50%       { box-shadow: 0 0 30px rgba(88,166,255,0.9), 0 0 60px rgba(188,140,255,0.5); transform: translate(-50%,-50%) scale(1.1); }
+    }
+    @keyframes spinX {
+      from { transform: translate(-50%,-50%) rotateX(0deg) rotateZ(60deg); }
+      to   { transform: translate(-50%,-50%) rotateX(360deg) rotateZ(60deg); }
+    }
+    @keyframes spinY {
+      from { transform: translate(-50%,-50%) rotateY(0deg) rotateX(30deg); }
+      to   { transform: translate(-50%,-50%) rotateY(360deg) rotateX(30deg); }
+    }
+    @keyframes spinZ {
+      from { transform: translate(-50%,-50%) rotateZ(0deg); }
+      to   { transform: translate(-50%,-50%) rotateZ(360deg); }
+    }
+    @keyframes orbit1 {
+      0%   { transform: translate(-50%,-50%) translate(75px, 0px); }
+      25%  { transform: translate(-50%,-50%) translate(0px, 75px); }
+      50%  { transform: translate(-50%,-50%) translate(-75px, 0px); }
+      75%  { transform: translate(-50%,-50%) translate(0px, -75px); }
+      100% { transform: translate(-50%,-50%) translate(75px, 0px); }
+    }
+    @keyframes orbit2 {
+      0%   { transform: translate(-50%,-50%) translate(55px, 0px); }
+      33%  { transform: translate(-50%,-50%) translate(-28px, 48px); }
+      66%  { transform: translate(-50%,-50%) translate(-28px, -48px); }
+      100% { transform: translate(-50%,-50%) translate(55px, 0px); }
+    }
+    @keyframes orbit3 {
+      0%   { transform: translate(-50%,-50%) translate(0px, -65px); }
+      25%  { transform: translate(-50%,-50%) translate(65px, 0px); }
+      50%  { transform: translate(-50%,-50%) translate(0px, 65px); }
+      75%  { transform: translate(-50%,-50%) translate(-65px, 0px); }
+      100% { transform: translate(-50%,-50%) translate(0px, -65px); }
+    }
+    @keyframes orbit4 {
+      0%   { transform: translate(-50%,-50%) translate(40px, 40px); }
+      50%  { transform: translate(-50%,-50%) translate(-40px, -40px); }
+      100% { transform: translate(-50%,-50%) translate(40px, 40px); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .canvas { flex-direction: column; }
+      .left { width: 100%; padding: 24px 20px; }
+      .right { min-height: 400px; }
+    }
+
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: #0d1117; }
+    ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+  </style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- ══ LEFT ══ -->
+  <div class="left">
+
+    <div class="greeting">// Hello, World!</div>
+
+    <div class="name-block">
+      <h1>I'm <span>Puspendu Gorai</span></h1>
+      <p style="color:#8b949e; font-size:13px; margin-top:8px; font-family:'Space Grotesk',sans-serif;">
+        Building tomorrow's intelligence, one commit at a time.
+      </p>
+    </div>
+
+    <div class="role-tags">
+      <span class="tag tag-blue">🐍 Python Enthusiast</span>
+      <span class="tag tag-purple">🤖 AI/ML Student</span>
+      <span class="tag tag-red">🌐 Web Developer</span>
+      <span class="tag tag-green">🎓 B.Tech CSE · 2nd Year</span>
+    </div>
+
+    <!-- TERMINAL -->
+    <div class="terminal">
+      <div class="term-header">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <span class="term-title">puspendu@brainware ~ profile.py</span>
+      </div>
+      <div class="term-body">
+        <div class="line"><span class="prompt">›</span><span class="cmd">whoami()</span></div>
+        <div class="line output"><span class="val-blue">"Puspendu Gorai"</span></div>
+        <div class="line" style="margin-top:4px;"><span class="prompt">›</span><span class="cmd">university</span></div>
+        <div class="line output"><span class="val-purple">"Brainware University"</span></div>
+        <div class="line" style="margin-top:4px;"><span class="prompt">›</span><span class="cmd">degree</span></div>
+        <div class="line output"><span class="val-yellow">"B.Tech CSE (AI&ML) · 2nd Year"</span></div>
+        <div class="line" style="margin-top:4px;"><span class="prompt">›</span><span class="cmd">focus</span></div>
+        <div class="line output"><span style="color:#3fb950">["Web Dev", "AI/ML", "Python", "DSA"]</span></div>
+        <div class="line" style="margin-top:4px;"><span class="prompt">›</span><span class="cmd">status</span></div>
+        <div class="line output"><span style="color:#3fb950">● open to opportunities</span></div>
+        <div class="line" style="margin-top:4px;"><span class="prompt">›</span><span class="cursor"></span></div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-num">7</div>
+        <div class="stat-lbl">FOLLOWERS</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5+</div>
+        <div class="stat-lbl">PROJECTS</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-lbl">COMMITS</div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="skill-section">
+      <div class="skill-title">// Skills</div>
+      <div class="skill-bar">
+        <div class="skill-meta"><span>Python</span><span style="color:#58a6ff">90%</span></div>
+        <div class="bar-bg"><div class="bar-fill bar-py" style="width:90%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-meta"><span>Web Development</span><span style="color:#bc8cff">75%</span></div>
+        <div class="bar-bg"><div class="bar-fill bar-web" style="width:75%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-meta"><span>AI / Machine Learning</span><span style="color:#ff7b72">65%</span></div>
+        <div class="bar-bg"><div class="bar-fill bar-ml" style="width:65%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-meta"><span>SQL & Databases</span><span style="color:#3fb950">80%</span></div>
+        <div class="bar-bg"><div class="bar-fill bar-sql" style="width:80%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-meta"><span>Java / C</span><span style="color:#e3b341">70%</span></div>
+        <div class="bar-bg"><div class="bar-fill bar-java" style="width:70%"></div></div>
+      </div>
+    </div>
+
+    <!-- CONNECT -->
+    <div class="connect-row">
+      <a class="connect-btn cb-gh" href="https://github.com/puspendugorai-coder" target="_blank">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a class="connect-btn cb-li" href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a class="connect-btn cb-gm" href="mailto:puspendugorai74@gmail.com">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        Email
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ══ RIGHT — 3D ORB ══ -->
+  <div class="right">
+    <div class="orb-container">
+
+      <div class="orb-wrap">
+        <div class="orb">
+          <div class="ring ring1"></div>
+          <div class="ring ring2"></div>
+          <div class="ring ring3"></div>
+          <div class="core"></div>
+          <div class="orbit-dot od1"></div>
+          <div class="orbit-dot od2"></div>
+          <div class="orbit-dot od3"></div>
+          <div class="orbit-dot od4"></div>
+        </div>
+        <div class="float-chip fc1">import torch</div>
+        <div class="float-chip fc2">def train():</div>
+        <div class="float-chip fc3">&lt;AI/ML/&gt;</div>
+        <div class="float-chip fc4">git push 🚀</div>
+      </div>
+
+      <div class="building-card">
+        <div class="bc-title">// Currently Building</div>
+        <div class="bc-item"><div class="bc-dot bd-blue"></div>Full-Stack Web Projects</div>
+        <div class="bc-item"><div class="bc-dot bd-purple"></div>ML Models & Pipelines</div>
+        <div class="bc-item"><div class="bc-dot bd-green"></div>DSA Foundations</div>
+      </div>
+
+      <div class="location-label">// West Bengal, India 📍</div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
