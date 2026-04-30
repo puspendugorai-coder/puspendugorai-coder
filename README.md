@@ -75,32 +75,6 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
 🎯 **CARRER GOALS:** **Full-Stack Web Developer | ML/AI Engineer**
 
 ---
-## 📫 Contact Information
-
-<table width="100%">
-  <tr>
-    <td width="30%"><strong>🎓 Institution</strong></td>
-    <td>Brainware University</td>
-  </tr>
-  <tr>
-    <td><strong>📜 Degree</strong></td>
-    <td>B.Tech in CSE (AI & ML) — 2nd Year</td>
-  </tr>
-  <tr>
-    <td><strong>📧 Email</strong></td>
-    <td><a href="mailto:puspendugorai74@gmail.com">puspendugorai74@gmail.com</a></td>
-  </tr>
-  <tr>
-    <td><strong>📞 Phone</strong></td>
-    <td><a href="tel:+918509151922">+91 8509151922</a></td>
-  </tr>
-  <tr>
-    <td><strong>📍 Location</strong></td>
-    <td>West Bengal, India</td>
-  </tr>
-</table>
-
----
 
 ## 🏆 Skills & Achievements
 
