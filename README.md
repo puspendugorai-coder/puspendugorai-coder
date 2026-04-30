@@ -16,35 +16,34 @@
 <table style="border: none; border-collapse: collapse;">
   <tr style="border: none;">
     <!-- Left Column: About Me Text -->
-   <td width="55%" style="border: none; vertical-align: top; padding-right: 20px;">
-     <h1> 👤 About Me! </h1>
-  <h2>👋 Hello, I'm <strong>Puspendu Gorai</strong></h2>
-  
-  <!-- Stylish Quote Box to add vertical bulk -->
-  <blockquote>
-    <p>💡 <b>"Turning concepts into intelligent web applications."</b></p>
-    <p>I am a passionate developer focusing on the intersection of AI Engineering and modern full-stack web technologies.</p>
-  </blockquote>
+   <h1>🧑‍💻 About Me</h1>
 
-  <hr>
+<table>
+<tr>
+<td width="55%" valign="top">
 
-  <!-- Spaced out details to match the GIF height -->
-  <p>
-    🎓 <b>Education:</b> B.Tech CSE (AIML) @ Brainware University <br><br>
-    🐍 <b>The Focus:</b> Python Enthusiast & Full-Stack Web Dev <br><br>
-    🧠 <b>Interests:</b> AI Engineering, LLMs, RAG Architecture <br><br>
-    🌱 <b>Currently Learning:</b> Advanced Model Deployment & Scalability <br><br>
-    📫 <b>Let's Connect:</b> <a href="mailto:puspendugorai74@gmail.com">puspendugorai74@gmail.com</a>
-  </p>
+<h3>
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> &nbsp; Who Am I?
+</h3>
 
-  <hr>
+> *"Turning concepts into intelligent web applications."*
 
-  <!-- Mini Tech Stack badges to fill the bottom space -->
-  <p>
-    <b>⚡ Core Stack:</b><br>
-    <code>Python</code> <code>Flask</code> <code>Streamlit</code> <code>Supabase</code> <code>Hugging Face</code>
-  </p>
-</td>
+I'm a **passionate developer** at the intersection of **AI Engineering** and **modern full-stack web technologies** — driven by curiosity and a love for clean, impactful code.
+
+<br/>
+
+| | |
+|---|---|
+| 🎓 **Education** | B.Tech CSE (AIML) @ Brainware University |
+| 📅 **Year** | 2nd Year |
+| 🐍 **Passion** | Python · AI/ML · Web Development |
+| 🧠 **Interests** | LLMs · RAG Architecture · AI Engineering |
+| 🌱 **Learning** | Advanced Model Deployment & Scalability |
+| 📍 **Location** | West Bengal, India |
+| 📫 **Email** | puspendugorai74@gmail.com |
+| 📞 **Phone** | +91 8509151922 |
+
+<br/>
    <!-- Right Column: 3D Animation -->
 <td width="45%" style="border: none; vertical-align: top;" align="center">
   <img src="https://github.com/puspendugorai-coder/puspendugorai-coder/blob/main/NEURO.gif?raw=true" alt="3D Tech Animation" width="400" />
@@ -152,16 +151,37 @@
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Tools
 
 <div align="center">
 
+### Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Frameworks & Libraries
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+### AI / ML
+![Hugging Face](https://img.shields.io/badge/HuggingFace-FFAA21?style=for-the-badge&logo=huggingface&logoColor=black)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+### Databases & DevOps
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
@@ -200,10 +220,17 @@
 
 ## 🌱 Currently Growing In
 
-- 🧠 Strengthening **Data Structures & Algorithms**
-- 📊 Exploring **advanced SQL** and query optimization
-- 🔧 Building projects that integrate **multiple languages**
-- 📚 Deepening software engineering fundamentals in **AIML**
+<div align="center">
+
+| Area | Focus |
+|:---|:---|
+| 🧠 **DSA** | Strengthening Data Structures & Algorithms |
+| 📊 **SQL** | Exploring advanced queries & optimization |
+| 🤖 **AI/ML** | LLMs, RAG, and model deployment |
+| 🌐 **Web Dev** | Full-Stack with React, Node & Flask |
+| 📚 **CS Fundamentals** | Deepening software engineering in AIML |
+
+</div>
 
 ---
 
