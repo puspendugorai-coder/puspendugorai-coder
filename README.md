@@ -26,10 +26,10 @@
         <li>📫 How to reach me: <a href="mailto:puspendugorai74@gmail.com">Email Me</a></li>
       </ul>
     </td>
-    <!-- Right Column: Live Stats Card -->
-    <td width="45%" style="border: none; vertical-align: top;" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=puspendugorai-coder&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Puspendu's GitHub Stats" />
-    </td>
+   <!-- Right Column: 3D Animation -->
+<td width="45%" style="border: none; vertical-align: top;" align="center">
+  <img src="https://github.com/puspendugorai-coder/puspendugorai-coder/blob/main/NEURO.gif?raw=true" alt="3D Tech Animation" width="400" />
+</td>
   </tr>
 </table>
 
