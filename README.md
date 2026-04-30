@@ -6,12 +6,51 @@
 
 ---
 
-## 🧑‍💻 About Me
+<div align="center">
+  <!-- Dynamic Typing Animation -->
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Puspendu+Gorai+👋;B.Tech+CSE+(AI+%26+ML)+Student;Python+Enthusiast+%7C+Web+Developer;Building+AI+%26+Full-Stack+Applications" alt="Typing SVG" />
+</div>
 
-> *"The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly."* — Donald Knuth<br>
-> *"The programmers of tomorrow are the wizards of the future".*
+<br/>
 
-I'm a dedicated developer with a strong foundation across multiple programming paradigms. I am currently a **2nd-year student at Brainware University**, pursuing my **B.Tech in Computer Science and Engineering (AIML)**. I love tackling challenging problems and writing clean, efficient, and meaningful code.
+<table style="border: none; border-collapse: collapse;">
+  <tr style="border: none;">
+    <!-- Left Column: About Me Text -->
+    <td width="55%" style="border: none; vertical-align: top;">
+      <h3>👨‍💻 About Me</h3>
+      <ul>
+        <li>🎓 I'm currently a 2nd-year <strong>B.Tech CSE (AIML)</strong> student at Brainware University.</li>
+        <li>🐍 <strong>Python Enthusiast</strong> & <strong>Full-Stack Web Developer</strong>.</li>
+        <li>🤖 Passionate about AI Engineering, LLMs, RAG, and building smart web applications.</li>
+        <li>🔭 Currently working with tools like <strong>Flask, Supabase, Streamlit, and Hugging Face</strong>.</li>
+        <li>📫 How to reach me: <a href="mailto:puspendugorai74@gmail.com">Email Me</a></li>
+      </ul>
+    </td>
+    <!-- Right Column: Live Stats Card -->
+    <td width="45%" style="border: none; vertical-align: top;" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=puspendugorai-coder&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Puspendu's GitHub Stats" />
+    </td>
+  </tr>
+</table>
+
+### 🛠️ Languages & Tools
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <br/>
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hugging_Face-FFAA21?style=for-the-badge&logo=huggingface&logoColor=white" />
+</p>
+
+### ⚡ Top Languages
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+</div>
 
 ---
 🚀 **CURRENT FOCUS:** **Web Development & AI/ML Engineering**  
