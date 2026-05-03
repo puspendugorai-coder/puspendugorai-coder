@@ -210,4 +210,8 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" />
 </a>
 
+<a href="https://puspendugorai-coder.github.io/Portfolio/" target="blank">
+  <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="portfolio" />
+</a>
+
 </div>
