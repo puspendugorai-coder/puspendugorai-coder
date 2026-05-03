@@ -42,6 +42,7 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
 | 📍 **Location** | West Bengal, India |
 | 📫 **Email** | puspendugorai74@gmail.com |
 | 📞 **Phone** | +91 8509151922 |
+| 🌐 **Portfolio** | [Click Here to Access](https://puspendugorai-coder.github.io/Portfolio/) |
 
 <br/>
    <!-- Right Column: 3D Animation -->
