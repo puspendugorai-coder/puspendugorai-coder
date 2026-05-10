@@ -52,11 +52,6 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
   </tr>
 </table>
 
-### ⚡ Top Languages
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
-</div>
-
 ---
 🚀 **CURRENT FOCUS:** **Web Development & AI/ML Engineering**  
 🎯 **CARRER GOALS:** **Full-Stack Web Developer | ML/AI Engineer**
