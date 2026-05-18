@@ -146,19 +146,12 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
 ---
 
 ## 📊 GitHub Stats
-
 <div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=puspendugorai-coder&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github" alt="Puspendu's GitHub Stats" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&langs_count=6&theme=tokyonight&hide_border=true" alt="Puspendu's Top Languages" />
-
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=puspendugorai-coder&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&cache_seconds=1800" alt="Puspendu's GitHub Stats" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=puspendugorai-coder&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&cache_seconds=1800" alt="Puspendu's Top Languages" />
 </div>
-
 <div align="center">
-
 <img src="https://streak-stats.demolab.com?user=puspendugorai-coder&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-
 </div>
 
 <div align="center">
