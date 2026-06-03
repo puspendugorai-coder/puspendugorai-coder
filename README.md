@@ -8,7 +8,7 @@
 
 <div align="center">
   <!-- Dynamic Typing Animation -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Puspendu+Gorai+👋;B.Tech+CSE+(AI+%26+ML)+Student;Python+Enthusiast+%7C+Web+Developer;Building+AI+%26+Full-Stack+Applications" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Puspendu+Gorai+👋;B.Tech+CSE+3rd+year+(AI+%26+ML)+Student;Python+Enthusiast+%7C+Web+Developer;Building+AI+%26+Full-Stack+Applications" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -35,7 +35,7 @@ I'm a **passionate developer** at the intersection of **AI Engineering** and **m
 | | |
 |---|---|
 | 🎓 **Education** | B.Tech CSE (AIML) @ Brainware University |
-| 📅 **Year** | 2nd Year |
+| 📅 **Year** | 3rd Year |
 | 🐍 **Passion** | Python · AI/ML · Web Development |
 | 🧠 **Interests** | LLMs · RAG Architecture · AI Engineering |
 | 🌱 **Learning** | Advanced Model Deployment & Scalability |
